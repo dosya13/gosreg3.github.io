@@ -1,0 +1,8 @@
+.slide p,
+.slide  [type="checkbox"]{
+    display:none;
+}
+
+.slide [type="checkbox"]:checked  p {
+    display:block;
+}

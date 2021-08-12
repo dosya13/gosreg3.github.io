@@ -1,0 +1,489 @@
+                           <!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head>
+        <link rel="shortcut icon" href="{% static 'main/images/favicon.ico' %}" type="image/x-icon">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Справочник</title>
+{% load static %}
+<link rel="icon" href="{% static 'main/images/favicon.png' %}" type="image/png">
+	<link rel="shortcut icon" href="{% static 'main/images/favicon.ico' %}" type="img/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+	<link href="{% static 'main/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/responsive.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/animate.css ' %}" rel="stylesheet"  type="text/css">
+
+	<script type="text/javascript" src="{% static 'main/js/jquery.1.8.3.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery-scrolltofixed.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery.easing.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery.isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/wow.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/classie.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/magnific-popup.js' %}"></script>
+	<script src="{% static 'main/contactform/contactform.js' %}"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+        <link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/responsive.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/animate.css' %}" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="{% static '' %}js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript" src="{% static 'main/js/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery-scrolltofixed.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery.easing.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery.isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/wow.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/classie.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/magnific-popup.js' %}"></script>
+	<script src="{% static 'main/contactform/contactform.js' %}"></script>
+
+ </head>
+   <nav class="main-nav-outer" id="test">
+		<!--main-nav-start-->
+		<div class="container">
+			<ul class="main-nav">
+				<li><a href="#header"></a></li>
+                <li><a  href="{% url 'index' %}">Основные услуги</a>
+                	<li><a href="{% url 'otdel' %}">Отделы</a></li>
+
+
+				<li><a href="{% url 'voprose' %}">часто задаваемые вопросы</a></li>
+
+				<li><a href="{% url 'anti' %}">антикорупция</a></li>
+
+				<li><a href="{% url 'contact' %}">Контакты</a></li>
+                <li><a href="{% url 'uslugi' %}">Расценки</a></li>
+			</ul>
+			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+
+<section class="main-section" id="vopros">
+		<!--main-section-start-->
+<h2>Часто задаваемые вопросы </h2>
+        <img src="{% static 'main/img/vopros.jpeg' %}" alt="Центрируем изображение" class="center-img" />
+	<script type='text/javascript'>
+  function showHide(divId)
+  {
+      if ( document.getElementById(divId).style.display === 'block' )
+          document.getElementById(divId).style.display = 'none';
+      else
+          document.getElementById(divId).style.display = 'block';
+  }
+  </script>
+      <h2>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">третий</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">4</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">5</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">6</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample7" aria-expanded="false" aria-controls="multiCollapseExample7">7</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample8" aria-expanded="false" aria-controls="multiCollapseExample8">8</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample9" aria-expanded="false" aria-controls="multiCollapseExample9">9</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample10" aria-expanded="false" aria-controls="multiCollapseExample10">10</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample11" aria-expanded="false" aria-controls="multiCollapseExample11">11</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample12" aria-expanded="false" aria-controls="multiCollapseExample12">12</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample13" aria-expanded="false" aria-controls="multiCollapseExample13">13</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample14" aria-expanded="false" aria-controls="multiCollapseExample14">14</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample15" aria-expanded="false" aria-controls="multiCollapseExample15">15</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample16" aria-expanded="false" aria-controls="multiCollapseExample16">16</button>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample17" aria-expanded="false" aria-controls="multiCollapseExample17">17</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3
+multiCollapseExample4
+multiCollapseExample5
+multiCollapseExample6
+multiCollapseExample7
+multiCollapseExample8
+multiCollapseExample9
+multiCollapseExample10
+multiCollapseExample11
+multiCollapseExample12
+multiCollapseExample13
+multiCollapseExample14
+multiCollapseExample15
+multiCollapseExample16
+multiCollapseExample17
+
+">все</button>
+</h2>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+       <h2> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </h2></div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+      <h2>  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample3">
+      <div class="card card-body">
+       <h2> третий</h2>
+      </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample4">
+      <div class="card card-body">
+      <h2> четыре</h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample5">
+      <div class="card card-body">
+     <h2> пять</h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample6">
+      <div class="card card-body">
+     <h2>   шесть</h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample7">
+      <div class="card card-body">
+     <h2>  семь</h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample8">
+      <div class="card card-body">
+     <h2> восемь</h2>  </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample9">
+      <div class="card card-body">
+    <h2>  девять</h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample10">
+      <div class="card card-body">
+     <h2> десять </h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample11">
+      <div class="card card-body">
+     <h2>  одинадцать </h2>  </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample12">
+      <div class="card card-body">
+    <h2>  двенадцать </h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample13">
+      <div class="card card-body">
+     <h2> тринадцать</h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample14">
+      <div class="card card-body">
+      <h2> четырнадцать</h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample15">
+      <div class="card card-body">
+      <h2> пятнадцать</h2> </div>
+    </div>
+  </div>
+    <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample16">
+      <div class="card card-body">
+      <h2>  шестнадцать </h2>  </div>
+    </div>
+  </div>
+      <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample17">
+      <div class="card card-body">
+          <h2>  семнадцать</h2> </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+				<figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-0s">
+
+
+
+				</figure>
+
+
+
+	</section>
+
+                           <script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#test').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+      $('.Portfolio-box').magnificPopup({
+        delegate: 'a',
+        type: 'image'
+      });
+
+		});
+	</script>
+
+	<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+	</script>
+
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+			$('.main-nav li a, .servicelink').bind('click', function(event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 102
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				if ($(window).width() < 768) {
+					$('.main-nav').hide();
+				}
+				event.preventDefault();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+
+			var $container = $('.portfolioContainer'),
+				$body = $('body'),
+				colW = 375,
+				columns = null;
+
+
+			$container.isotope({
+				// disable window resizing
+				resizable: true,
+				masonry: {
+					columnWidth: colW
+				}
+			});
+
+			$(window).smartresize(function() {
+				// check if columns has changed
+				var currentColumns = Math.floor(($body.width() - 30) / colW);
+				if (currentColumns !== columns) {
+					// set new column count
+					columns = currentColumns;
+					// apply width to container manually, then trigger relayout
+					$container.width(columns * colW)
+						.isotope('reLayout');
+				}
+
+			}).smartresize(); // trigger resize to set container width
+			$('.portfolioFilter a').click(function() {
+				$('.portfolioFilter .current').removeClass('current');
+				$(this).addClass('current');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+
+					filter: selector,
+				});
+				return false;
+			});
+
+		});
+	</script>
+
+   <script>
+function toggle(objNameText) {
+  var objText = document.getElementById(objNameText);
+  if ( objText !== null ) {
+    objText.style.display = (objText.style.display === '') ? 'none' : '';
+  }
+}
+</script>
+   <script>
+    $(".extremum-click").click(function () {
+      $(this).siblings(".extremum-slide").slideToggle("slow");
+    });
+</script>
+<style>
+
+h1{
+	font-size:30px;
+	color:#2a6496;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-align:left;
+	margin:0 0 60px 0;
+}
+ .center-img {
+  display: block;
+  margin: 0 auto;
+}
+ .parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.block {
+    width: 250px; /* Задаем ширину */
+    height: 250px; /* Задаем высоту */
+    position: absolute;
+    top: 50%; /* Отступ сверху на половину родительского блока */
+    left: 50%; /* Отступ слева на половину родительского блока */
+    margin: -125px 0 0 -125px;}/* Отступ на половину блока с помощью отрицательного margin */
+
+    p {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: none;
+    }
+    {box-sizing: border-box;}
+
+.thumb img{
+
+}
+
+.thumb {font-size: 0;}
+
+.img-item {
+  margin-bottom: 30px;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+
+}
+h4{
+    font-size:150%;
+	color:#2a6496;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-align:center;
+	margin:0 0 60px 0;
+}
+h5{
+    font-size:150%;
+	color:#2a6496;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-align:center;
+	margin:0 0 60px 0;
+}
+h3{
+    font-size:150%;
+	color:#000000;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-align:center;
+	margin:0 0 60px 0;
+}
+h6{
+	font-size:30px;
+	color:#2a6496;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	text-align:left;
+	margin:0 0 60px 0;
+}
+.primer1{
+	font: italic 15px/30px Arial;
+    color: #2a6496;
+	}
+    *{
+  padding: 0;
+  margin: 0;
+}
+
+.d{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.text{
+  background-color: tomato;
+    width: 50vw;
+   height: 50vw;
+   font-size: 120px;
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+   justify-content: center;
+   -ms-align-items: center;
+   align-items: center;
+}
+
+.p{
+
+  -webkit-background-size: contain;
+  background-size: contain;
+   width: 50vw;
+   height: 50vw;
+
+}
+    bodybackground-image:{% static 'main/img/2019Nature_The_moon_and_snow-capped_mountains_are_reflected_in_the_water_137941_ — копия.jpg'%}
+
+</style>

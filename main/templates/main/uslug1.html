@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head>
+        <link rel="shortcut icon" href="{% static 'main/images/favicon.ico' %}" type="image/x-icon">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Справочник</title>
+{% load static %}
+      <link rel="icon" href="{% static 'main/images/favicon.png' %}" type="image/png">
+	<link rel="shortcut icon" href="{% static 'main/images/favicon.ico' %}" type="img/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+	<link href="{% static 'main/css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/responsive.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/animate.css ' %}" rel="stylesheet"  type="text/css">
+
+	<script type="text/javascript" src="{% static 'main/js/jquery.1.8.3.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery-scrolltofixed.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery.easing.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery.isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/wow.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/classie.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/magnific-popup.js' %}"></script>
+	<script src="{% static 'main/contactform/contactform.js' %}"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+        <link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/responsive.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'main/css/animate.css' %}" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="{% static '' %}js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript" src="{% static 'main/js/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery-scrolltofixed.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery.easing.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery.isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/wow.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/classie.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/magnific-popup.js' %}"></script>
+	<script src="{% static 'main/contactform/contactform.js' %}"></script>
+         <script type="text/javascript" src="{% static 'main/js/jquery.1.8.3.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'main/js/jquery-scrolltofixed.js' %}"></script>
+ </head>
+    <nav class="main-nav-outer" id="test">
+		<!--main-nav-start-->
+		<div class="container">
+			<ul class="main-nav">
+				<li><a href="#header"></a></li>
+                <li><a  href="{% url 'index' %}">Основные услуги</a>
+                	<li><a href="{% url 'otdel' %}">Отделы</a></li>
+
+
+				<li><a href="{% url 'voprose' %}">часто задаваемые вопросы</a></li>
+
+				<li><a href="{% url 'anti' %}">антикорупция</a></li>
+
+				<li><a href="{% url 'contact' %}">Контакты</a></li>
+                	<li><a href="{% url 'uslugi' %}">Расценки</a></li>
+			</ul>
+			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+   <body >
+
+
+    <table class="table_center_by_css">
+  <colgroup style="background-color: #ddd;">
+    <col>
+    <col style="background-color: #ccc;">
+    <col>
+  </colgroup>
+   <tbody>
+   <tr>
+       <th><h3 class="primer1" >Отдел</h3></th>
+         <th><h3 class="primer1">Ф.И.О. руководителей</h3></th>
+       <th><h3 class="primer1" >"Городской </h3>  <h3 class="primer1" >       тел."</h3></th>
+       <th><h3 class="primer1">"Групповой тел.</h3>  <h3 class="primer1">Внутренний тел."</h3></th>
+       <th><h3 class="primer1">"Кабинет</h3></th>
+       <td><h3><h6>&nbsp &nbsp &nbsp &nbsp  &nbsp</h6>
+
+   <th><h3 class="primer1">Отдел</h3></th>
+         <th><h3 class="primer1">Ф.И.О. руководителей</h3></th>
+       <th><h3 class="primer1">"Городской </h3>  <h3 class="primer1">тел."</h3></th>
+       <th><h3 class="primer1">"Групповой тел</h3>  <h3 class="primer1">Внутренний тел."</h3></th>
+       <th><h3 class="primer1">"Кабинет</h3></th></tr>
+   <tr><td><h3><h6 > 1 Начальник управления</h6></h3></td><h6>
+     <td><h3><h6>Берикбаев Болотбек Жумагулович</h6>
+     <td><h3><h6>56-21-52<strong><br>56-21-54 факс</strong></h6>
+     <td><h3><h6>201</h6>
+     <td><h3><h6>401 каб.<br>(1-приемная)</h6>
+      <td><h3><h6> </h6>
+   <td><h3><h6> 2 Первый заместитель начальника управления</h6></h3></td><h6>
+     <td><h3><h6>Кадырмамбетов Мелис Жумамудинович </h6>
+     <td><h3><h6>54-80-04</h6>
+     <td><h3><h6>201</h6>
+     <td><h3><h6>401 каб.<br>(1-приемная)</h6>
+   <tr><td><h3><h6> 3 Заместитель начальника управления</h6></h3></td><h6>
+     <td><h3><h6>Минбаев Нурлан Турсунович</h6>
+     <td><h3><h6>56-21-56</h6>
+     <td><h3><h6>203</h6>
+       <td><h3><h6>405 каб.</h6>
+        <td><h3><h6> </h6>
+   <td><h3><h6> 4 Финансово-экономический отдел</h6></h3></td><h6>
+     <td><h3><h6>Мусаев Алмазбек Мукашович</h6>
+     <td><h3><h6>56-21-52<strong><br>56-21-54 факс</strong></h6>
+       <td><h3><h6>205 </h6> <br> <h6>206</h6>
+     <td><h3><h6>403 каб.</h6> <br> <h6>402</h6>
+   <tr><td><h3><h6> 5 Отдел кадров и делопроизводства</h6></h3></td><h6>
+     <td><h3><h6>Асилбекова Пахта Зайнидиновна</h6>
+     <td><h3><h6>56-37-62</h6> <br> <h6>56-16-67</h6> <br> <h6></h6>
+     <td><h3><h6>207</h6> <br> <h6>235</h6>
+     <td><h3><h6>411 каб.</h6> <br> <h6>114 каб.</h6>
+        <td><h3><h6> </h6>
+   <td><h3><h6> 6 Отдел по вопросам правового обеспечения</h6></h3></td><h6>
+     <td><h3><h6>Абылов Адилет Кубанычбекович</h6>
+     <td><h3><h6>56-21-69</h6>
+     <td><h3><h6>222 </h6> <br> <h6>210</h6>
+     <td><h3><h6>409 каб.</h6> <br> <h6>401А каб.</h6>
+   <tr><td><h3><h6> 7 Отдел информационных технологий</h6></h3></td><h6>
+     <td><h3><h6>Дайырбеков Самат Мелисович</h6>
+     <td><h3><h6>56-37-31</h6> <br> <h6>56-35-71</h6>
+     <td><h3><h6>208
+</h6> <br> <h6>
+217
+</h6>
+     <td><h3><h6>404 каб.
+</h6> <br> <h6>
+408 каб.
+</h6>
+        <td><h3><h6> </h6>
+   <td><h3><h6> 8 Отдел архива</h6></h3></td><h6>
+     <td><h3><h6>Базаркулова Жамиля Эльчиевна</h6>
+      <td><h3><h6>54-80-05</h6>
+     <td><h3><h6>209</h6>
+     <td><h3><h6>202 каб</h6>
+   <tr><td><h3><h6> 9 Отдел регистрации и предоставления информации</h6></h3></td><h6>
+     <td><h3><h6>Джумашов Нурбек Мэлисович</h6>
+     <td><h3><h6>56-16-42</h6> <br> <h6>
+
+56-13-35</h6> <br> <h6>
+56-21-71</h6> <br> <h6>
+56-21-73</h6> <br> <h6>
+
+</h6>
+     <td><h3><h6>232</h6> <br> <h6>
+222</h6> <br> <h6>
+830</h6> <br> <h6>
+231</h6> <br> <h6>
+213</h6> <br> <h6>
+
+</h6>
+     <td><h3><h6>302 каб.</h6> <br> <h6>
+302 каб.</h6> <br> <h6>
+301 каб.</h6> <br> <h6>
+301А каб.</h6> <br> <h6>
+303 каб.</h6> <br> <h6>
+</h6>
+        <td><h3><h6> </h6>
+   <td><h3><h6> 10 Отдел оформления сделок </h6></h3></td><h6>
+     <td><h3><h6>Исмаилова Миржан Талантбековна</h6>
+     <td><h3><h6>56-21-74</h6>  <h6>
+
+56-37-58</h6>  <h6>
+
+
+56-21-55</h6>  <h6>
+
+
+56-21-66</h6>  <h6>
+
+56-21-64</h6>  <h6>
+
+56-21-55</h6>  <h6>
+
+56-37-58</h6>  <h6>
+56-21-74</h6>  <h6>
+56-21-66</h6>  <h6>
+</h6>
+     <td><h3><h6>215</h6>  <h6>
+
+223</h6>  <h6>
+
+221</h6>  <h6>
+
+
+
+234</h6>  <h6>
+
+237</h6>  <h6>
+
+221</h6>  <h6>
+
+223</h6>  <h6>
+215</h6>  <h6>
+234</h6>  <h6>
+</h6>
+     <td><h3><h6>101 каб.
+
+101 каб.</h6>  <h6>
+102 каб.
+103 каб.</h6>  <h6>
+104 каб.
+105 каб.</h6>  <h6>
+106 каб.
+107 каб.</h6>  <h6>
+108 каб.
+109 каб.</h6>  <h6>
+110 каб.
+111 каб.</h6>  <h6>
+112 каб.
+113 каб.</h6>  <h6>
+114 каб.
+Справочная
+</h6>
+   <tr><td><h3><h6> 11 Отдел приема и выдачи документов</h6></h3></td><h6>
+     <td><h3><h6>Муратбекова Айчурок Исаевна</h6>
+     <td><h3><h6>56-21-57
+</h6>
+     <td><h3><h6>211</h6>
+     <td><h3><h6>Зал приема</h6>
+        <td><h3><h6> </h6>
+   <td><h3><h6> 12 Отдел обследования недвижимости</h6></h3></td><h6>
+     <td><h3><h6>Султангазиев Эмилбек Тилебалдиевич</h6>
+     <td><h3><h6>56-21-70
+
+56-21-65</h6>  <h6>
+
+56-34-84
+56-21-75</h6>  <h6>
+56-21-72
+</h6>
+     <td><h3><h6>212</h6>  <h6>
+
+214</h6>  <h6>
+
+216</h6>  <h6>
+
+204</h6>  <h6>
+
+</h6>
+     <td><h3><h6>305 каб.</h6>  <h6>
+
+306 каб.</h6>  <h6>
+
+304 каб.</h6>  <h6>
+
+307 каб.</h6>
+
+   <tr><td><h3><h6> 13 Отдел по кадастру и землеустройства</h6></h3></td><h6>
+     <td><h3><h6>Субанкулова Асель Батырбековна</h6>
+     <td><h3><h6>56-09-70</h6>  <h6>
+56-21-62</h6>  <h6>
+
+56-21-68</h6>  <h6>
+56-37-88</h6>  <h6>
+</h6>
+     <td><h3><h6>226</h6>  <h6>
+227</h6>  <h6>
+
+218</h6>  <h6>
+230</h6>  <h6>
+</h6>
+     <td><h3><h6>407 каб.</h6>  <h6>
+413 каб.</h6>  <h6>
+401А каб.</h6>  <h6>
+410 каб.</h6>  <h6>
+501 каб.
+</h6>
+        <td><h3><h6> </h6>
+   <td><h3><h6> 14 Отдел картографии, учета и топографической съемки</h6></h3></td><h6>
+     <td><h3><h6>Бумралиева Айнура Шамсабековна</h6>
+     <td><h3><h6>56-36-74</h6>  <h6>
+56-21-58</h6>  <h6>
+
+56-36-37</h6>  <h6>
+56-14-31</h6>  <h6>
+</h6>
+     <td><h3><h6>
+220
+
+219
+
+</h6>
+     <td><h3><h6>409 каб.</h6>  <h6>
+2 каб.</h6>  <h6>
+1 каб.</h6>  <h6>
+415 каб.
+
+</h6>
+   <tr><td><h3><h6> 15 Отдел технического обслуживания</h6></h3></td><h6>
+     <td><h3><h6>Туралиев Бекмурат Туркманович</h6>
+     <td><h3><h6>54-26-96</h6>
+     <td><h3><h6>895</h6>
+     <td><h3><h6>501 каб.
+(склад)
+</h6>
+        <td><h3><h6> </h6>
+   <td><h3><h6> 16 Справочная</h6></h3></td><h6>
+     <td><h3><h6></h6>
+     <td><h3><h6>54-26-04</h6>
+     <td><h3><h6></h6>
+     <td><h3><h6></h6>
+   <tr><td><h3><h6> 17 Касса</h6></h3></td><h6>
+     <td><h3><h6></h6>
+     <td><h3><h6>56-35-62
+</h6>
+     <td><h3><h6>225</h6>
+     <td><h3><h6></h6>
+       <td><h3><h6>      </h6>
+   <td><h3><h6> 18 Служба безопасности</h6></h3></td><h6>
+     <td><h3><h6></h6>
+     <td><h3><h6>56-15-54</h6>
+     <td><h3><h6>224</h6>
+     <td><h3><h6></h6>
+   </h3></td></h6></h6> </tbody>
+
+
+
+
+
+
+
+</table>
+   
+            <div class = "wrapper">
+ <a class="link animated fadeInUp delay-1s servicelink" href="{% url 'home' %}">Назад</a>
+</div>
+
+
+
+
+
+
+	<footer class="footer">
+        <h1 class="animated fadeInDown delay-07s"></h1>
+            <ul class="we-create animated fadeInUp delay-1s">
+
+			</ul>
+		<div class="container">
+			<div class="footer-logo"><a href="{% url 'home' %}"><img src="{% static 'main/img/footer-logo.png' %}" alt=""></a></div>
+			<span class="copyright"></span>
+			<div class="credits">
+
+				Designed by <a href="{% url 'home' %}">gosreg</a>
+			</div>
+		</div>
+	</footer>
+
+<style>
+  .table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: green;
+	border: 1px solid #dddddd;
+}
+.table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+
+.table h3{
+              font-size:200%;
+	color:black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-align: left;
+	margin:0 0 60px 0;
+    text-indent: 10px;
+    }
+.primer1{
+
+	font: italic 15px/30px Arial;
+    color: #080808;
+    margin:0 0 10px 0;
+	}
+
+
+   TABLE {
+    width: 70%; /* Ширина таблицы */
+    border: 1px solid black; /* Рамка вокруг таблицы */
+    background: silver; /* Цвет фона таблицы */
+       text-align: center ;
+       margin-top: -100px
+   }
+   TD, TH {
+    text-align: center; /* Выравнивание по центру */
+    padding: 1px; /* Поля вокруг содержимого ячеек */
+        border: 1px solid black; /* Рамка вокруг таблицы */
+   }
+   TH {
+    background: #4682b4; /* Цвет фона */
+    color: white; /* Цвет текста */
+     border-bottom: 1px solid black; /* Линия снизу */
+     border: 1px solid black; /* Рамка вокруг таблицы */
+   }
+   .lc {
+    font-weight: bold; /* Жирное начертание текста */
+    text-align: center; /* Выравнивание по левому краю */
+   }
+
+    .table_center_by_css {
+
+        width: 80%;
+
+        border: 1px solid #000;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+</style>
+
+
+</table>
+<style>
+    .strong {font: italic 15px/30px Arial;
+    color: #2a6496;
+	}
+
+    h3 {
+        font-size:70%;
+	color:red;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-align: left;
+	margin:0 0 20px 0;
+    text-indent: 10px;
+
+    }
+    h6{
+	font-size:100%;
+	color:black;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	text-align: left;
+	margin:0 0 20px 0;
+    text-indent: 10px;
+}
+.wrapper {
+    text-align: center;
+    margin:0 0 20px 0;
+
+}
+</style>
+
+                           <script type="text/javascript">
+		$(document).ready(function() {
+
+			$('#test').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+      $('.Portfolio-box').magnificPopup({
+        delegate: 'a',
+        type: 'image'
+      });
+
+		});
+	</script>
+
+    </body></html>
+
+{% block content %}
+
+
+
+{% endblock %}
+
